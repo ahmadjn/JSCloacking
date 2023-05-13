@@ -29,13 +29,17 @@
       }
     }
 
+    function randomUrl(arr) {
+      return arr[Math.floor(arr.length * Math.random())];
+    }
+
     const ua = UAParser();
     const device = ua.device;
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
 
-    const redirectUrl = Math.floor(Math.random() * redirectUrls.length);
+    const redirectUrl = randomUrl(redirectUrls);
 
     if (!isBot()) {
       if (urlParams.has('gclid') || urlParams.has('fbclid')) {
