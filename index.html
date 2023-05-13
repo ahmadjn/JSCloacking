@@ -31,8 +31,9 @@
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    if (urlParams.has('gclid') || urlParams.has('fbclid')) {
-      if (!isBot()) {
+
+    if (!isBot()) {
+      if (urlParams.has('gclid') || urlParams.has('fbclid')) {
         if (device.type == "mobile") {
           window.location.href = redirectUrl;
         }
