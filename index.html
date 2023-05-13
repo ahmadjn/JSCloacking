@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <script src="/js/ua-parser.min.js"></script>
+  <script>
+    /*  YOU CAN MODIFY THIS  */
+    /*  config start  */
+    const redirectUrl = "https://madreview.net";
+    const delay = 5000;
+    /*  config end  */
+
+    /*  DO NOT MODIFY THIS  */
+    const ua = UAParser();
+    const device = ua.device;
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    if (urlParams.has('gclid') || urlParams.has('fbclid')) {
+      if (device.type == "mobile") {
+        window.location.href = redirectUrl;
+      }
+    }
+
+    setTimeout(window.location.href = redirectUrl, delay);
+  </script>
+</head>
+
+<body>
+  <h1>Lorem Ipsum Landing Page</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deserunt vero et tempore sint cum corrupti
+    provident! Tempora nesciunt nemo eligendi voluptatibus minus officia soluta natus, quod beatae. Obcaecati odio
+    incidunt vitae. Labore pariatur blanditiis fugiat commodi laborum ut autem, culpa expedita, cumque error molestiae
+    dolorem dolores eius doloremque. Earum?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, recusandae beatae est commodi vel natus? Dolore
+    neque iure officia dolores hic quam labore laboriosam eligendi harum quidem maxime consequuntur temporibus molestiae
+    perspiciatis vero, consectetur ad? Ea perspiciatis, minus laboriosam totam illo quo dolorum rerum error aut repellat
+    omnis aspernatur dolore quasi corporis molestiae quod quae aperiam, corrupti blanditiis nam quaerat, eaque quis
+    veniam. Minima iure aspernatur laborum eos quod rem, exercitationem nam quidem explicabo hic incidunt ducimus sit
+    molestiae, perferendis quasi debitis autem voluptatum repellendus? Amet odit officiis ratione deleniti inventore ut
+    ab! Accusamus deserunt ullam aliquam totam, culpa iure.</p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem consequatur, laboriosam nulla iure adipisci quia
+    voluptas? Ipsam voluptatibus sed commodi aliquid temporibus soluta alias ea libero consequuntur, tenetur impedit,
+    numquam non expedita sit itaque minus ut, aspernatur vero perferendis repudiandae dolore. Ab perspiciatis est
+    doloribus ducimus.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus amet magni officiis est obcaecati, veniam illo
+    alias dolores! Corporis in aperiam quam error labore officiis fugiat temporibus dolores cum obcaecati expedita,
+    soluta reprehenderit saepe voluptatem, facere earum et dolorem porro sint assumenda omnis pariatur magni non! Dicta
+    aut ea maxime optio eligendi labore est repellendus aperiam ipsam eveniet explicabo dolor aspernatur, itaque quos
+    minima nam provident sapiente! Voluptas eaque ipsum deleniti distinctio quod autem delectus necessitatibus sed.</p>
+</body>
+
+</html>
