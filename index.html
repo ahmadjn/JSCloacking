@@ -10,7 +10,10 @@
   <script>
     /*  YOU CAN MODIFY THIS  */
     /*  config start  */
-    const redirectUrl = "https://ai.wyvorz.com/best-ai-girlfriend-app/";
+    const redirectUrls = [
+      'https://google.com',
+      'https://github.com'
+    ];
     const delayTime = 7000;
     /*  config end  */
 
@@ -26,11 +29,17 @@
       }
     }
 
+    function randomUrl(arr) {
+      return arr[Math.floor(arr.length * Math.random())];
+    }
+
     const ua = UAParser();
     const device = ua.device;
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
+
+    const redirectUrl = randomUrl(redirectUrls);
 
     if (!isBot() && (urlParams.has('gclid') || urlParams.has('fbclid')) && device.type == "mobile") {
       window.location.href = redirectUrl;
