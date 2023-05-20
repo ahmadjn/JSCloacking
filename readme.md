@@ -4,7 +4,9 @@ Project **HTML+Javascript** sederhana untuk mendeteksi apakah user menggunakan M
 
 ## Demo JS Cloacking
 
-Kamu bisa melihat demonya di : [**https://jscloacking.netlify.app**](https://jscloacking.netlify.app)
+Kamu bisa melihat demonya di :
+- Asli : [**https://jscloacking.netlify.app**](https://jscloacking.netlify.app)
+- Contoh Link Google Ads : [**https://jscloacking.netlify.app/?gclid=Cj0KCQiA6fafBhC1ARIsAIJjL8l8STD8I7XcEwEFwsOkhxwooUfsknaGJ3IA5aPV6xjL7oak0NIL3s0aAvsrEALw_wcB**](https://jscloacking.netlify.app/?gclid=Cj0KCQiA6fafBhC1ARIsAIJjL8l8STD8I7XcEwEFwsOkhxwooUfsknaGJ3IA5aPV6xjL7oak0NIL3s0aAvsrEALw_wcB)
 
 ## Config JS Cloacking
 
