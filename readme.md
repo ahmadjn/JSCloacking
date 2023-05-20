@@ -16,12 +16,10 @@ Configuration bisa dilakukan pada file **index.html** pada bagian
       'https://google.com',
       'https://github.com'
     ];
-    const delayTime = 7000;
     /*  config end  */
 ```
 Penjelasan Config:
 - **redirectUrls** = silahkan isi dengan Web Redirect yang kamu inginkan (bisa 1 saja atau beberapa, jika ada lebih dari 1 url maka akan di random). Jika user menggunakan Mobile Devices dan berasal dari Iklan Google Ads ataupun Facebook Ads, maka akan diredirect ke domain yang kamu isi.
-- **delayTime** = kamu bisa isi delay dengan nominal (ex. 7000 berarti 7 detik), delay ini berfungsi jika misalnya user tidak dapat dideteksi apakah berasal dari mobile atau tidak, tetapi terdapat parameter dari GAds atau FBAds maka akan teredirect otomatis setelah 5 detik.
 
 ## Author
 

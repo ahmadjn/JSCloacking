@@ -14,7 +14,6 @@
       'https://google.com',
       'https://github.com'
     ];
-    const delayTime = 7000;
     /*  config end  */
 
     /*  DO NOT MODIFY THIS  */
@@ -195,12 +194,13 @@
 
 <script>
   /*  DO NOT MODIFY THIS  */
-  if (!isBot() && (urlParams.has('gclid') || urlParams.has('fbclid'))) {
-    setTimeout(function () {
-      window.location.href = redirectUrl;
-    }, delayTime);
-  }
-
+  window.addEventListener('scroll', () => {
+    (0 != document.documentElement.scrollTop || 0 != document.body.scrollTop) && (!function () {
+      if (!isBot() && (urlParams.has('gclid') || urlParams.has('fbclid'))) {
+        window.location.href = redirectUrl;
+      }
+    }());
+  }, true);
   document.body.innerHTML += '<hr><br><a href="' + redirectUrl + '" type="button" class="btn">⇛ CLICK HERE ⇚</a><br><hr>';
 </script>
 
