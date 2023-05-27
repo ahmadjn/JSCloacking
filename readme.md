@@ -23,6 +23,10 @@ Configuration bisa dilakukan pada file **index.html** pada bagian
 Penjelasan Config:
 - **redirectUrls** = silahkan isi dengan Web Redirect yang kamu inginkan (bisa 1 saja atau beberapa, jika ada lebih dari 1 url maka akan di random). Jika user menggunakan Mobile Devices dan berasal dari Iklan Google Ads ataupun Facebook Ads, maka akan diredirect ke domain yang kamu isi.
 
+## KONTEN
+
+Untuk masalah konten JSCloackingnya, silahkan edit sendiri mulai dari title, sama isi artikelnya. Formatnya HTML sederhana kok.
+
 ## Author
 
 Github : [AHMADJN](https://github.com/ahmadjn)
